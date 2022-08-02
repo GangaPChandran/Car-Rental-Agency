@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg,#2c27c2,#310342);
+ }
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+   font-size: 25px;
+   font-weight: 500;
+   position: relative;
+   margin-bottom: 20px;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin: 20px 0 12px 0;
+    width: calc(100% /2 - 20px);
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+}
+.user-details .input-box .details{
+  font-weight: 500px;
+  margin-bottom:5px;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline:none;
+    color: #fff;
+    border: none;
+    background: linear-gradient(135deg,#2c27c2,#310342);
+}
+
+
+@media(max-width:1000px){
+    .shop{
+        grid-template-columns: repeat(4,223px);
+    }
+}
